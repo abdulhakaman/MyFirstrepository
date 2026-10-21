@@ -1,0 +1,168 @@
+
+body{
+  background-color: aqua;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #040404d2;
+}
+.main-header:hover{
+  transform: scale(1.05);
+}
+
+.homelogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.homelogo .textlogo h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.homelogo .imagelogo img {
+  width: 40px;
+  height: auto;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+  color: yellow;
+}
+.hero {
+  display: flex;
+  background-image: url("../images/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.Readmore a{
+  display: flex;
+  color: yellow;
+  align-items: center;
+}
+.Readmore:hover{
+  transform: scale(1.05);
+ background-color: red;
+
+}
+
+.hero-overlay {
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;color: rgb(234, 138, 13);
+}
+
+.hero-text p {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+  color: rgb(202, 246, 25);
+}
+
+.btn {
+  background-color: yellow;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Tourism Section */
+.tourism {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #111;
+}
+
+.tourism h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.places {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.place {
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.place img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.place:hover {
+  transform: translateX(10px); 
+  box-shadow: 0 8px 20px rgba(6, 69, 242, 0.6); 
+  background: rgba(10, 57, 245, 0.2); 
+}
+
+.place:hover img {
+  transform: scale(1.05); 
+}
+
+
+.place h3 {
+  margin: 15px 0 10px;
+  font-size: 20px;
+  color: yellow;
+}
+
+.place p {
+  font-size: 14px;
+  color: aquamarine;
+}
